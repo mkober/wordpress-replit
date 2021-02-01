@@ -1,1 +1,2 @@
-run = "php -c php.ini -S 0.0.0.0:8000 -t wordpress/"
+LANGUAGE = "PHP Webserver"
+RUN = "php -c php.ini -S 0.0.0.0:8000 -t wordpress/"

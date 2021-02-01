@@ -1,2 +1,2 @@
-LANGUAGE = "PHP Webserver"
+LANGUAGE = "PHP"
 RUN = "php -c php.ini -S 0.0.0.0:8000 -t wordpress/"

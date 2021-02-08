@@ -34,6 +34,7 @@ do
 done
 
 rm -R Work
-rm index.php
 mv router.php wordpress/router.php
 mv wordpress/wp-config-sample.php wordpress/wp-config.php
+mv PHPModules wordpress/PHPModules
+mv php.ini wordpress/php.ini

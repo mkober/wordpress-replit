@@ -35,6 +35,9 @@ done
 
 rm -R Work
 mv router.php wordpress/router.php
-mv wordpress/wp-config-sample.php wordpress/wp-config.php
 mv PHPModules wordpress/PHPModules
 mv php.ini wordpress/php.ini
+
+sed -i "1 s/^/<?php \n define('FORCE_SSL_ADMIN', true); \n if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) \n \$_SERVER['HTTPS']='on' \n ?>\n\n/" wordpress/wp-config-sample.php
+
+mv wordpress/wp-config-sample.php wordpress/wp-config.php

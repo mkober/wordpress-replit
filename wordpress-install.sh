@@ -33,6 +33,9 @@ do
 	echo "extension=$Module" >> php.ini
 done
 
+echo "upload_max_filesize = 10M\n" >> php.ini
+echo "post_max_size = 10M\n" >> php.ini
+
 rm -R Work
 rm wordpress/wp-config-sample.php
 
